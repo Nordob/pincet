@@ -1,0 +1,115 @@
+.menu
+
+	&__container
+		position: relative
+		width: 100%
+		max-width: 83.333vw
+		margin: 0 auto
+		padding: 0 1.042vw
+		z-index: 4
+
+	&__navigation
+		position: relative
+
+	&__bg
+		position: absolute
+		left: 1.042vw
+		right: 1.042vw
+		top: 0.417vw
+		height: 3.125vw
+		border-radius: 0.260vw
+		background-color: #ffffff
+		opacity: 0.5
+		z-index: 4
+
+
+	&__list
+		position: relative
+		display: flex
+		justify-content: space-between
+		padding: 0 0.855vw
+		border-radius: 0.260vw
+		background-color: #ffffff
+		z-index: 5
+
+	&__item
+
+	&__link--active
+		color: #282828
+
+	&__link
+		display: block
+		padding: 0.990vw 1.068vw
+		text-decoration: none
+		color: #808080
+		font-family: "MuseosansCYRL4"
+		font-size: 0.781vw
+		font-weight: normal
+		transition: .3s color
+		letter-spacing: 0.075vw
+
+		&:hover
+			color: #282828
+
+	&__mobile
+		display: none
+
+	@media ( max-width: 991px )
+		&__bg
+			display: none
+
+		&__list
+			position: absolute
+			flex-direction: column
+			left: 0
+			right: 0
+			top: 49px
+			padding: 0
+			height: 0
+			overflow-y: scroll
+			background-color: #fefcfb
+			border-radius: 0 0 25px 25px
+			overflow: hidden
+			transition: .5s height
+
+			&--open
+				height: 300px
+				overflow: auto
+
+		&__link
+			font-size: 14px
+			padding: 9px 30px
+
+		&__mobile
+			display: flex
+			align-items: center
+			justify-content: space-between
+			position: relative
+			color: #1f1d1d
+			font-size: 15px
+			padding: 10px 15px 10px 27px
+			border-radius: 25px
+			background-color: #fefcfb
+			text-decoration: none
+			letter-spacing: normal
+			line-height: normal
+
+			&--open
+				border-radius: 25px 25px 0 0
+
+		&__item
+			border-bottom: 1px pink solid
+
+		&__item:last-child
+			border: none
+
+		&__arrow
+			width: 29px
+
+	@media ( max-width: 540px )	
+		&__mobile
+			padding: 6px 10px 6px 20px
+
+		&__list
+			top: 41px
+

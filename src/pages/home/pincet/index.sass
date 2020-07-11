@@ -1,0 +1,304 @@
+.pincet
+	position: relative
+	font-family: "MuseosansCYRL0"
+	z-index: 2
+
+	&__animation 
+		position: absolute!important
+		z-index: 1
+		top: 0!important
+		left: 0!important
+		bottom: 0!important
+		right: 0!important
+
+	&__heart--bg1
+		position: absolute!important
+		top: 2.083vw !important
+		left: -7.01vw !important
+		width: 18.698vw
+		z-index: 1
+		
+		img
+			width: 100%
+
+	&__heart--bg2
+		position: absolute!important
+		right: -14.208vw !important
+		top: -8.333vw !important
+		width: 13.125vw
+		left: unset!important
+
+		img
+			width: 100%
+
+	&__wave
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		height: 8.021vw
+		background: url("./pincet_wave.png")
+		background-position: center
+		background-size: cover
+		background-repeat: no-repeat
+		z-index: 6
+
+	&__bg
+		position: absolute
+		right: -8.333vw
+		top: 1.771vw
+		width: 45.208vw
+		height: 39.583vw
+		background: url("./pincet__girl.png")
+		background-position: center
+		background-size: cover
+		background-repeat: no-repeat
+		z-index: 3
+
+	&__wrapper
+		position: relative
+		z-index: 4
+
+	&__content
+		padding: 5.556vw 0 11.458vw 5.990vw
+
+	&__title
+		color: #282828
+		font-size: 2.500vw
+		line-height: 2.885vw
+		margin-bottom: 2.778vw
+		letter-spacing: 0.018vw
+
+	&__info
+		display: flex
+
+	&__list
+		margin: 0 0 2.991vw 0.417vw
+
+	&__item
+		display: flex
+		align-items: center
+		margin-bottom: 0.534vw
+
+	&__dot
+		width: 0.885vw
+		height: 0.885vw
+		margin-right: 0.729vw
+		box-shadow: 0 0.052vw 0.677vw rgba(239, 148, 153, 0.38)
+		border: 0.208vw solid #f7f7fb
+		border-radius: 50%
+		background-color: #ef9499
+	
+	&__text
+		letter-spacing: 0.026vw
+		font-size: 0.938vw
+
+	&__button
+		position: relative
+		display: block
+		width: 19.740vw
+		font-family: "MuseosansCYRL4"
+		padding: 1.146vw 7.973vw 1.146vw 2.344vw
+		background-image: linear-gradient(to top, #ee858c 0%, #fabcbc 98%, #fabcbc 100%)
+		text-decoration: none
+		text-transform: uppercase
+		color: #ffffff
+		font-size: 0.729vw
+		letter-spacing: 0.087vw
+		border-radius: 2.240vw
+		text-align: center
+		line-height: 0.962vw
+		box-shadow: 0 4px 2px -2px rgba(241, 131, 131, 0.57)
+
+	&__branch
+		position: absolute
+		width: 10.885vw
+		height: 3.646vw
+		left: 12.135vw
+		top: 0.208vw
+
+	&__screen
+		position: relative
+
+	&__plate
+		position: relative
+		width: 9.167vw
+		height: 12.292vw
+		margin-left: 5.128vw
+		z-index: 3
+
+	&__heart
+		position: absolute
+		width: 6.719vw
+		height: 6.302vw
+		top: 1.146vw
+		right: -3.646vw
+		z-index: 4
+
+	&__hint
+		position: absolute
+		width: 2.135vw
+		height: 2.135vw
+		top: 9.71vw
+		right: -1.083vw
+		display: flex
+		z-index: 4
+
+		&:hover
+			.pincet__box
+				display: block
+
+	&__box
+		position: absolute
+		display: none
+		width: 11.529vw
+		height: 13.648vw
+		bottom: 0.142vw
+		right: -9.531vw
+		padding: 2.471vw 1.758vw 2.458vw 1.758vw
+		text-align: center
+		background: url('./pincet__box.png')
+		background-position: center
+		background-size: cover
+		background-repeat: no-repeat
+
+
+	&__box--text
+		font-size: 0.729vw
+		letter-spacing: 0.087vw
+
+	&__inf
+		width: 100%
+		z-index: 4
+		display: flex
+		justify-content: center
+		align-items: center
+		border-radius: 50%
+		animation: radial-pulse 1s infinite
+
+	&__shadow
+		position: absolute
+		width: 44.427vw
+		height: 23.698vw
+		top: 3.438vw
+		left: -3.906vw
+		z-index: 2
+
+	@media ( max-width: 991px )
+		&__title
+			font-size: 30px
+			line-height: normal
+			margin-bottom: 30px
+			letter-spacing: 1px
+
+		&__content
+			padding: 30px 20px 100px 100px
+
+		&__bg
+			right: 0
+			top: 20px
+			width: 435px
+			height: 380px
+
+		&__right
+			display: none
+
+		&__list
+			margin: 0 0 20px 10px
+
+		&__item
+			margin-bottom: 10px
+
+		&__dot
+			width: 10px
+			height: 10px
+			margin-right: 10px
+
+		&__text
+			letter-spacing: normal
+			font-size: 15px	
+
+		&__button
+			width: 280px
+			padding: 15px 10px 15px 20px
+			font-size: 10px
+			letter-spacing: normal
+			border-radius: 20px
+			text-align: left
+			line-height: normal
+
+			br
+				display: none
+
+		&__branch
+			width: 100px
+			height: 32px
+			left: 221px
+			top: 4px		
+
+	@media ( max-width: 700px )
+		&__wave
+			display: none
+
+		&__button
+			margin: 0 auto
+
+		&__bg
+			display: none
+
+		&__content 
+			padding: 30px 0 75px 0
+			text-align: center
+
+		&__info
+			width: 100%
+
+		&__left
+			margin: 0 auto
+
+		&__heart--bg1 
+			top: 30px !important
+			left: 30px !important
+			width: 140px
+
+		&__heart--bg2
+			right: -4px !important
+			top: 0 !important
+			width: 120px
+
+	@media (max-width: 440px)
+
+		&__title
+			font-size: 16px
+
+		&__list
+			margin: 0 0 15px 0
+
+		&__text
+			font-size: 11px
+
+		&__item
+			margin-bottom: 5px
+
+		&__button
+			margin: 0
+			width: 230px
+			font-size: 8px
+
+		&__branch
+			width: 80px
+			height: 27px
+			left: 191px
+			top: 4px
+
+@keyframes radial-pulse
+  0%
+    box-shadow: 0 0 0 0px rgba(241, 131, 131, 0.5)
+
+  100%
+    box-shadow: 0 0 0 40px rgba(241, 131, 131, 0)
+	
+
+
+	
+		

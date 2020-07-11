@@ -1,0 +1,43 @@
+header.header
+    .header__bg
+    .container
+        .header__wrapper
+            .header__left
+                img.header__logo(src="./../../images/logo.png")
+                p.header__text 
+                    | Студия депиляции и 
+                    br 
+                    | массажный кабинет 
+                    br 
+                    | в Бресте
+            .header__right
+                a.header__button--popup(href="#") Контактная информация
+                    img.header__calendar(src="./../../images/phone_ico.png")
+                .header__mobile
+                    .header__map
+                        a.header__card(href="#")
+                            img.header__card--img(src="./../../images/point_map.png")
+                        .header__info
+                            p.header__location
+                                b Мы находимся в центре:
+                                br
+                                | г. Брест, ул. Гоголя, д.65
+                            a.header__link(href="#") Смотреть на карте
+                                <iframe class="header__maps" src="https://yandex.ua/map-widget/v1/?um=constructor%3Ac138bf7bf89601612f260fec4ae0186c5b381c2f56eb741df6290aaa4ab808d0&amp;source=constructor" width="320" height="240" frameborder="0"></iframe>
+                    .header__number
+                        .header__phone
+                            .header__communication
+                                img.header__img(src="./../../images/phone_ico.png")
+                            .header__phone--text
+                                .header__call--wrapper
+                                    .header__dot
+                                    p.header__call Звоните, мы сейчас работаем
+                                p.header__num +375 33 382 24 99
+                        .header__time
+                            .header__communication
+                                img.header__img(src="./../../images/time_ico.png")
+                            p.header__time-text
+                                | Пн-Вс 
+                                b 9:00-21:00
+                a.header__online(href="#" id="openPopup") Записаться онлайн
+                    img.header__calendar(src="./../../images/calendar_ico.png")

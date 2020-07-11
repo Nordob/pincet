@@ -1,0 +1,259 @@
+.header
+  position: relative
+
+  &__bg
+    position: absolute
+    background: url('./top__bg.png')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    left: 0
+    right: 0
+    height: 55.260vw
+    width: 100%
+    z-index: 1
+
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 79.688vw
+    width: 100%
+    margin: 0 auto
+    padding: 1.667vw 0 0.781vw 0
+    font-family: "MuseosansCYRL0"
+
+  &__left
+    display: flex
+    align-items: center
+
+  &__right
+    display: flex
+    justify-content: flex-end
+    align-items: center
+
+  &__text
+    margin-left: 2.292vw
+    color: #282828
+    font-size: 0.729vw
+    letter-spacing: 0.036vw
+
+  &__map
+    display: flex
+    align-items: center
+    margin-right: 3.312vw
+
+  &__card
+    position: relative
+    display: block
+    width: 4.063vw
+    height: 4.063vw
+    background-image: url('./header_map.png')
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat 
+
+  &__card--img
+    position: absolute
+    left: 1.875vw
+    top: 1.042vw
+    width: 0.885vw
+    height: 1.094vw
+
+  &__info
+    margin-left: 1.282vw
+    color: #282828
+    font-size: 0.833vw
+    font-weight: 400
+
+  &__location
+    margin-bottom: 0.534vw
+    line-height: 1.068vw
+    letter-spacing: 0.048vw
+
+  &__link
+    position: relative
+    color: #ff6078
+    font-family: "MuseosansCYRL1"
+    font-size: 0.625vw
+    text-transform: uppercase
+    letter-spacing: 0.063vw
+    border-bottom: 0.104vw dotted #ff6078
+    text-decoration: none
+
+    &:hover
+      .header__maps
+        display: block
+
+  &__link--wrap  
+
+
+  &__maps
+    position: absolute
+    left: 0
+    top: 10px
+    z-index: 10
+    display: none
+
+  &__number
+    margin-right: 3.098vw
+
+  &__phone,
+  &__time
+    display: flex
+    align-items: center
+
+  &__phone
+    margin: 0 0 0.469vw 0
+
+  &__time-text
+    color: #282828
+    font-size: 0.833vw
+    letter-spacing: 0.043vw
+  
+  &__communication
+    width: 1.823vw
+    height: 1.823vw
+    margin: 0 0.573vw 0 0
+    box-shadow: 0 0.156vw 1.042vw rgba(68, 68, 68, 0.11)
+    background-color: #ffffff
+    display: flex
+    border-radius: 50%
+    
+
+  &__img
+    width: 0.781vw
+    height: 0.781vw
+    margin: auto
+
+  &__call
+    font-size: 0.625vw
+    margin: 0 0 0 0.427vw
+    letter-spacing: 0.062vw
+
+  &__call--wrapper
+    display: flex
+    align-items: center
+
+  &__dot
+    width: 0.313vw
+    height: 0.313vw
+    box-shadow: 0 0 0.365vw rgba(79, 160, 55, 0.61)
+    background-color: #27b24b
+    border-radius: 50%
+  
+  &__num
+    font-size: 1.250vw
+    font-family: "MuseosansCYRL1"
+    line-height: 1.042vw
+    letter-spacing: 0.043vw
+
+
+  &__logo
+    width: 14.583vw
+
+  &__online
+    position: relative
+    display: block
+    color: #1f1d1d
+    font-size: 0.781vw
+    padding: 0.781vw 1.302vw 0.781vw 2.604vw
+    border-radius: 1.563vw
+    background-color: #fefcfb
+    text-decoration: none
+    letter-spacing: 0.064vw
+    line-height: 1.603vw
+    box-shadow: 0 4px 2px -2px #ebeaea
+
+  &__calendar
+    position: absolute
+    left: 1.042vw
+    top: 0.938vw
+    width: 1.042vw
+    height: 1.042vw
+
+  &__mobile
+    display: flex
+    justify-content: flex-end
+    align-items: center
+
+
+  &__button--popup
+    display: none
+
+  @media ( max-width: 991px )
+
+    &__bg
+      height: 100vw
+
+    &__mobile
+      display: none
+
+    &__button--popup
+      position: relative
+      display: block
+      margin-right: 5px
+      color: #1f1d1d
+      font-size: 11px
+      padding: 10px 15px 10px 27px
+      border-radius: 18px
+      background-color: #fefcfb
+      text-decoration: none
+      letter-spacing: normal
+      line-height: normal
+      box-shadow: 0 4px 2px -2px #ebeaea
+
+
+    &__online
+      font-size: 11px
+      padding: 10px 15px 10px 27px
+      border-radius: 18px
+      letter-spacing: normal
+      line-height: normal
+
+    &__calendar
+      left: 10px
+      top: 10px
+      width: 12px
+      height: auto
+
+    &__logo
+      width: 130px
+
+    &__text
+      margin-left: 10px
+      font-size: 9px
+      letter-spacing: 0.7px
+          
+
+  @media ( max-width: 712px )
+
+    &__right
+      flex-direction: column
+    
+    &__button--popup
+      margin: 0 0 4px 0
+
+  
+  @media ( max-width: 520px )
+    &__logo
+      width: 110px
+
+    &__text
+      display: none
+
+    &__button--popup
+      font-size: 9px
+      padding: 6px 10px 6px 21px
+
+    &__online
+      font-size: 9px
+      padding: 6px 10px 6px 21px
+
+    &__calendar
+      left: 7px
+      top: 5px
+      width: 10px
+
+    &__bg
+      height: 100vh

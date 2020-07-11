@@ -1,0 +1,96 @@
+.contact
+	position: fixed
+	display: none
+	z-index: 10
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	overflow: hidden
+
+	&__wrapper
+		position: relative
+		display: flex
+		margin: auto
+		width: 100%
+		max-width: 400px
+		height: 400px
+		background-color: rgba(252,236,252,1)
+		border-radius: 50px
+		font-family: "MuseosansCYRL0"
+
+	&__content
+		text-align: center
+		padding: 50px 20px 0 20px
+		width: 100%
+		max-width: 570px
+		margin: 0 auto
+
+	&__title 
+		color: #282828
+		font-family: "MuseosansCYRL1"
+		font-size: 25px
+		font-weight: 400
+		margin-bottom: 25px
+
+	&__info
+		font-size: 20px
+
+	&__right 
+		margin-bottom: 5px
+
+	&__close
+		position: absolute
+		right: 25px
+		top: 10px 
+		font-size: 28px
+		color: #282828
+		font-weight: bold
+		opacity: 0.5
+
+		&:hover
+			opacity: 1
+
+	&__show
+		display: flex
+
+	&__animation
+		display: flex
+		animation: pop-up-start 1s
+
+	&__close--popup
+		display: flex
+		animation: pop-up-end 1s
+
+	@media ( max-width: 500px )
+		&__wrapper
+			max-width: 300px
+			height: 350px
+			border-radius: 40px
+
+		&__title
+			font-size: 18px
+			margin-bottom: 30px
+	
+		&__info
+			font-size: 15px
+
+
+@keyframes pop-up-start
+	0%      
+		opacity: 0
+		transform: translateY(-5%)
+
+	100% 
+		opacity: 1
+		transform: translateY(0%)
+
+@keyframes pop-up-end
+	0%      
+		opacity: 1
+		transform: translateY(0)
+
+	100% 
+		opacity: 0
+		transform: translateY(-5%)
+

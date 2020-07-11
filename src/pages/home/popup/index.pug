@@ -1,0 +1,36 @@
+.popup
+	.popup__wrapper
+		.popup__content
+			.popup__close &#10006;
+			img.popup__book(src="./../../images/popup__overlay.png", alt="")
+			h2.popup__title 
+				b Получите
+				|  программу обучения
+			p.popup__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+			form(class="popup__form" action="/" method="post")
+				label(for="choise")
+					input(class="popup__input" id='choise' type="text" name="choise" placeholder="Повышение квалификации" value='')
+					ul.popup__list 
+						li.popup__item Повышение квалификации
+						li.popup__item Пункт 2
+						li.popup__item Пункт 3
+				label(for="name")
+					input(class="popup__input" type="text" name="name" placeholder="Ваше имя") 
+				label(for="tel")
+					input(class="popup__input" type="text" name="tel" placeholder="Ваш номер телефона") 
+				.popup__button
+					input(class="popup__btn" type="submit" name="submit" value="Получить программу")
+					img.popup__img(src="./../../images/popup__plant.png", alt="")
+	.popup__fon
+		.popup__wrap
+			.popup__ok
+				.popup__close &#10006;
+				img.popup__petal(src="./../../images/popup__petal.png", alt="")
+				img.popup__okey(src="./../../images/popup__ok.png", alt="")
+				img.popup__shadow(src="./../../images/popup__right.png", alt="")
+				p.popup__order 
+					b Ваш заказ принят.
+					br
+					| Ожидайте звонка
+
+
